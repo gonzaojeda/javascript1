@@ -1,0 +1,2123 @@
+/* /////// RESETEOS DE HTML /////// */
+
+* { margin: 0;
+    padding: 0;}
+
+
+
+
+
+/* /////// PROPIEDADES EN COMÚN /////// */   
+
+header {
+    width: 99.8%;
+    background-color:#DACDBC;
+    border: 1px solid #5C4E41;
+    display:flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    grid-area: header;
+}
+
+.divLogo {
+    width: 7%;
+    height: 70%;
+    border: 1px solid #5C4E41;
+    margin-right: 5%;
+    align-self: center;
+    margin-left: 5%;
+}
+
+.divLogo:hover{
+    border: 1px solid black;
+}
+
+.divNav{width: 80%;
+     background-color:#DACDBC;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+     height: 100%;
+     width: 100%;}
+
+ul{ background-color:#DACDBC;
+    list-style-type: none;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.liNav{ 
+    font-family: 'Lato', sans-serif;
+}
+
+.liMenu:hover
+    {   transform: scale(1.2,1.2);
+        transition: 1s;
+        }
+
+.botonesMenu{  
+    color:#5C4E41;
+    border: 1px solid #5C4E41;
+    padding: 4px 2px 4px 2px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight:normal;
+}
+
+footer {
+    background-color: #DACDBC;
+    border: 2px solid #5C4E41;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end; 
+}
+
+#divFooterUno{
+    width: 50%;
+}
+
+#divFooterDos{
+    width: 50%;
+}
+
+.spanFooter { 
+ width: 95%;
+ margin-left: 5px;
+}
+
+#logoIg {
+    width: 7%;
+    
+}
+
+#logoIg:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+
+#logoWp {
+    width: 7%;
+      
+}
+
+#logoWp:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+
+.spanCopyright
+{ display: flex;
+  flex-direction: row;
+  justify-content: flex-end;} 
+
+.parrafoCopyright {
+    color:#5C4E41;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+/* /////// PAGINA INICIO /////// */
+
+.gridIndex{ 
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+}
+
+
+
+.mainIndex{
+    display:flex;
+    flex-direction: column;
+    grid-area: main;
+    align-items: center;
+    justify-content: space-around;
+}
+ 
+.sectionIndexUno{
+    width: 80%;
+      
+}
+
+.sectionIndexDos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divTitulo {
+    width: 100%;
+    height: 100%;
+
+}
+
+.tituloMain{
+    color:#5C4E41;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'Lato', sans-serif;
+    background-color: #DACDBC;
+    border: 4px groove #5C4E41;
+}
+
+.divImagenIndex {
+    width: 40%;
+    height: 100%;
+    border: 2px solid #5C4E41;
+
+}
+
+#imagenIndex{
+    width: 100%;
+}
+
+
+/* /////// PAGINA SOBRE NOSOTROS /////// */
+
+#fondoFilosofiaHache{
+    background-image: url("../Imagenes/contacto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#gridSobreNos {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 10% 85% 5%;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+}
+
+
+#mainSobreNos{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sectionSobreNos{
+    width: 70%;
+    height: 40%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sectionFilosofiaHache{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sectionCaracteristicas{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+
+
+#divSobreNos {
+    width: 100%;
+    height: 70%;
+    border: 2px solid #5C4E41;
+    background-color: #DACDBC;
+
+}
+
+#parrafoSobreNos {
+    color:#5C4E41;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    margin: 1% 2% 2% 2%;   
+    
+}
+
+#divFilosofiaHache
+{ width: 50%;
+    height: 25%;
+    background-color: #DACDBC;
+    border: 1px dashed #5C4E41;
+}
+
+#tituloFilosofiaHache{
+    color:#5C4E41;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Lato', sans-serif;
+   }
+
+.divCaracteristicas
+{
+    width: 25%;
+    height: 60%;
+    background-color: #DACDBC;
+    border: 1px dotted #5C4E41;
+}
+
+/* /////// PAGINA PRODUCTOS /////// */
+
+
+#gridProductos{ 
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 92% 3%;
+    grid-template-areas: "header"
+                         "main"
+                        "footer";
+                }
+
+#mainProductos{
+    display:flex;
+    flex-direction: column;
+    grid-area: main;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sectionProdTitu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+    height: 2%;
+    padding: 7rem;
+}
+
+#divProdTitu{
+    height: 10%;
+    width: 100%;
+}
+
+
+
+#sectionProductos{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows:  27% 4% 27% 4% 27% 4%;
+    grid-template-areas: "img1 img2 img3"
+                         "des1 des2 des3"
+                         "img4 img5 img6"
+                         "des4 des5 des6"
+                         "img7 img8 img9"
+                         "des7 des8 des9";
+    row-gap: 2.5%;
+    column-gap: 1%;
+        }
+
+.desProd
+{   
+    color:#5C4E41;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#divImgUno {
+    grid-area: img1;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+
+}
+
+#divImgDos {
+    grid-area: img2;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+
+}
+
+#divImgTres {
+    grid-area: img3;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+}
+
+#divProdUno{
+    grid-area: des1;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+#divProdDos{
+    grid-area: des2;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+#divProdTres{
+    grid-area: des3;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+
+#divImgCuatro {
+    grid-area: img4;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+}
+
+#divImgCinco {
+    grid-area: img5;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+}
+
+#divImgSeis {
+    grid-area: img6;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+}
+
+
+#divProdCuatro{
+    grid-area: des4;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+#divProdCinco{
+    grid-area: des5;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+#divProdSeis{
+    grid-area: des6;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+#divImgSiete {
+    grid-area: img7;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+}
+
+#divImgOcho {
+    grid-area: img8;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+}
+
+#divImgNueve {
+    grid-area: img9;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid #5C4E41;
+}
+
+#divProdSiete{
+    grid-area: des7;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+#divProdOcho{
+    grid-area: des8;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+
+#divProdNueve{
+    grid-area: des9;
+    justify-self: center;
+    width: 80%;
+    height: 100%;   
+    background-color: #DACDBC;
+    border: 4px solid #5C4E41;
+    margin-bottom: 10%;
+    margin-top: -7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+}
+/* /////// PAGINA GALERIA /////// */
+
+    
+#gridGaleria{ 
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 92% 3%;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    }
+    
+
+#mainGaleria{
+    grid-area: main;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    border:  5px solid #352a20 ;
+    }
+
+#sectionGaleria{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas: "foto1 foto2 foto3"
+                             "foto4 foto5 foto6"
+                             "foto7 foto8 foto9";
+    }
+
+#divGaleriaUno{
+    grid-area: foto1;
+    width: 100%;
+    border: 1px solid #352a20;
+    }
+
+#divGaleriaDos{
+    grid-area: foto2; 
+    width: 100%;
+    border: 1px solid #352a20;
+    }
+
+#divGaleriaTres{
+    grid-area: foto3;  
+    width: 100%;
+    border: 1px solid #352a20;
+    }
+
+#divGaleriaCuatro{
+    grid-area: foto4;  
+    width: 100%;
+    border: 1px solid #352a20; 
+    }
+
+#divGaleriaCinco{
+    grid-area: foto5;  
+    width: 100%;
+    border: 1px solid #352a20; 
+    }
+
+#divGaleriaSeis{
+    grid-area: foto6; 
+    width: 100%;
+    border: 1px solid #352a20;
+    }
+
+#divGaleriaSiete{
+    grid-area: foto7;   
+    width: 100%;
+    border: 1px solid #352a20;
+    }
+
+#divGaleriaOcho{
+    grid-area: foto8;
+    width: 100%;
+    border: 1px solid #352a20;
+    }
+
+#divGaleriaNueve{
+    grid-area: foto9;  
+    width: 100%;
+    border: 1px solid #352a20;
+    }
+
+.imagenGaleria{
+    width: 100%;
+    }
+
+
+/* /////// PAGINA CONTACTO /////// */
+
+#mainContacto{
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sectionContacto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#divMainForm{
+    width: 40%;
+    height: 100%;
+    border: 2px solid #5C4E41;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: -7%;
+    margin-bottom: 3%;
+
+}
+
+#divMainRedes{
+    width: 40%;
+    height: 100%;
+    border: 2px solid #5C4E41;
+    background-image: linear-gradient(to bottom,#DACDBC,#a79585);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: -7%;
+    margin-bottom: 3%;
+
+}
+
+form { 
+    width: 100%;
+    height: 100%;
+}
+
+fieldset{
+    height: 100%;
+    border: none;
+}
+
+ol{ 
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    width: 90%;
+    margin-left: 2%;
+}
+
+
+legend{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+
+
+.parrafoFormulario{
+    color: #352a20;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.labelForm
+    {
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+   }
+
+#nombreCiente
+{
+    margin-left: 12px;
+}
+
+
+.inputEfecto {
+     font-size: 12px;
+}
+
+.inputEfecto:focus{
+    background-color: #352a20;
+    color: #DACDBC;
+    transition: 1s;    
+}
+
+
+#liNombre{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    column-gap: 5%;
+    margin-left: 2%;
+}
+
+#liTelef{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    column-gap: 6.5%;
+    margin-left: 2%;
+}
+
+#liEmail{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    column-gap: 7.9%;
+    margin-left: 2%;
+}
+
+#liPublicidad {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-around;
+    margin-left: 4.2%;
+}
+
+#liComentarios {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content:space-around;
+    align-items: flex-start;
+    column-gap: 2%;
+    margin-left: 8%;
+
+}
+
+#textArea
+{
+    width: 65%;
+}
+
+#textArea:focus
+{ background-color: #352a20;
+    color: #DACDBC;
+    transition: 1s;    
+}
+
+
+#liTerminos{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+#liForm{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    margin-left: 8%;
+}
+
+.botonForm{
+    border:2px solid #DACDBC;
+    color: #352a20;
+}
+
+.botonForm:hover
+{
+    background-color: #352a20;
+    color: #DACDBC;
+}
+
+select{
+    color: #352a20;
+    font-family: 'Lato', sans-serif;
+    font-size: 80%;
+}
+
+#spanInstagram{
+    width: 45%;
+    border: 2px solid #5C4E41;
+    margin-bottom: 5%;
+
+}
+
+#spanInstagram:hover{
+    border: 2px double #5C4E41;
+    transition: 0.5s;
+}
+
+#spanLinkIg{
+    width: 20%;
+}
+
+
+#botonHache{
+    color: #352a20;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#botonHache:hover
+    {color: #DACDBC;
+    transition: 0.5s;
+    font-weight: bold;
+    }
+@media only screen and (max-width: 600px)
+{
+    body{
+    background-image: url("../Imagenes/fondoIndex.jpg");
+    height: 600px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    .tituloMain{
+        font-size: 10px;
+    }
+
+    .parrafoCopyright {
+        font-size: 8px;
+    }
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    .botonesMenu{
+        font-size: 8px;
+    }
+
+    #parrafoSobreNos{
+        font-size:8.5px;
+        line-height: 150%;
+    }
+
+    #tituloFilosofiaHache{
+    
+        font-size: 10px;
+        }
+
+    .parrafoCaracteristicas{
+            color:#5C4E41;
+            font-weight: bolder;
+            font-size: 7px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 25px;
+            font-family: 'Lato', sans-serif;
+        
+        }
+        
+    .animate__animated.animate__fadeIn
+        {
+                --animate-duration: 4s;
+         }
+        
+    .animate__animated.animate__slideInLeft
+        {
+                --animate-duration: 2s;
+        }
+        
+    .animate__animated.animate__slideInRight
+        {
+                --animate-duration: 2s;
+        }
+    
+    .animate__animated.animate__slideInUp
+        {
+        --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInDown
+        {
+        --animate-duration: 2s;
+        }
+    
+    .parrafoFormulario{
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 5px;
+            margin-bottom: 10px;
+        }
+    
+    .labelForm
+        {
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 4.5px;
+       }
+
+    #liNombre{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 5%;
+        margin-left: 2%;
+    }
+    
+    #liTelef{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 6.5%;
+        margin-left: 2%;
+    }
+    
+    #liEmail{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 7.9%;
+        margin-left: 3%;
+    }
+    
+    .inputEfecto:focus{
+        transform: none;
+        transition: none;
+    }
+
+    .inputEfecto{
+        width: 50%;
+        font-size: 4.5px;
+    }
+
+    #liPublicidad {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-around;
+        margin-left: 4.2%;
+    }
+    
+    #liComentarios {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-around;
+        align-items: flex-start;
+        column-gap: 2%;
+        margin-left: 6%;
+    
+    }
+    
+    #textArea
+    {
+        width: 65%;
+        font-size: 5px;
+    }
+    
+    #liTerminos{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content:space-around;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    #inputCheck
+    {
+        height: 95%;
+    }
+    
+    #liForm{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+    
+    .botonForm{
+        border:2px solid #DACDBC;
+        color: #352a20;
+        width: 35%;
+        font-size: 3px;
+    }
+    
+    select{
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        font-size:5px;
+    }
+    #botonHache{
+        font-size: 8px;
+    }
+
+   .bodyMayor{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 1500px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+
+    .desProd    
+    {font-size: 8px;}
+
+}
+
+@media only screen and (max-width: 400px)
+{
+    body{
+    height:400px;
+    background-image: url("../Imagenes/fondoIndex.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+    .divLogo{
+    width: 10%;
+    }
+    
+
+    .tituloMain{
+        font-size: 6px;
+    }
+
+    .parrafoCopyright {
+        font-size: 2px;
+    }
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    .botonesMenu{
+        font-size: 2px;
+    }
+    
+    #parrafoSobreNos{
+        font-size:4.5px;
+
+    }
+
+    #tituloFilosofiaHache{
+    
+        font-size: 5px;
+    }    
+    
+    .parrafoCaracteristicas{
+        color:#5C4E41;
+        font-weight: bolder;
+        font-size: 4px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    
+    .animate__animated.animate__fadeIn
+        {
+            --animate-duration: 4s;
+        }
+    
+    .animate__animated.animate__slideInLeft
+        {
+            --animate-duration: 2s;
+        }
+    
+    .animate__animated.animate__slideInRight
+        {
+            --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInUp
+        {
+        --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInDown
+        {
+        --animate-duration: 2s;
+        }
+
+    .parrafoFormulario{
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 4px;
+            margin-bottom: 10px;
+        }
+    
+    .labelForm
+        {
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 4px;
+       }
+
+    #liNombre{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 5%;
+        margin-left: 2%;
+    }
+    
+    #liTelef{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 6.5%;
+        margin-left: 2%;
+    }
+    
+    #liEmail{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 7.9%;
+        margin-left: 2%;
+    }
+    
+    .inputEfecto{
+        width: 50%;
+        font-size: 3px;
+    }
+
+   
+
+    #liPublicidad {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+        margin-left: 6.5%;
+    }
+    
+    #liComentarios {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-around;
+        align-items: flex-start;
+        column-gap: 2%;
+        margin-left: 6%;
+    
+    }
+    
+    #textArea
+    {
+        width: 65%;
+        font-size: 5px;
+    }
+    
+    #liTerminos{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content:space-around;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    #inputCheck
+    {
+        height: 95%;
+    }
+    
+    #liForm{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+    
+    .botonForm{
+        border:2px solid #DACDBC;
+        color: #352a20;
+        width: 35%;
+        font-size: 3px;
+    }
+    
+    select{
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        font-size:4px;
+    }
+
+    #botonHache{
+        font-size: 6px;
+    }
+
+    .bodyMayor{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 1000px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+
+    .desProd    
+    {font-size: 6px;}
+  
+}
+
+
+@media only screen and (min-width: 600px)
+{
+    body{
+    background-image: url("../Imagenes/fondoIndex.jpg");
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    .tituloMain{
+        font-size: 12px;
+    }
+
+    .parrafoCopyright {
+        font-size: 10px;
+    }
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    .botonesMenu{
+        font-size: 10px;
+    }
+
+    #parrafoSobreNos{
+        font-size:10px;
+        line-height: 150%;
+    }
+
+    #tituloFilosofiaHache{
+    
+        font-size: 12px;
+        }
+
+     .parrafoCaracteristicas{
+            color:#5C4E41;
+            font-weight: bolder;
+            font-size: 9px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+            font-family: 'Lato', sans-serif;
+        
+        }
+        
+    .animate__animated.animate__fadeIn
+        {
+                --animate-duration: 4s;
+         }
+        
+    .animate__animated.animate__slideInLeft
+     {
+                --animate-duration: 2s;
+     }
+        
+    .animate__animated.animate__slideInRight
+        {
+                --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInUp
+        {
+    --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInDown
+        {
+    --animate-duration: 2s;
+        }
+
+    .parrafoFormulario{
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 40%;
+            margin-bottom: 10px;
+        }
+    
+    .labelForm
+        {
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 6px;
+       }
+
+    #liNombre{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 5%;
+        margin-left: 2%;
+    }
+    
+    #liTelef{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 6.5%;
+        margin-left: 2%;
+    }
+    
+    #liEmail{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 7.9%;
+        margin-left: 2%;
+    }
+    
+    .inputEfecto{
+        width: 50%;
+        font-size: 50%;
+    }
+
+   
+
+    #liPublicidad {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-around;
+        margin-left: 4.2%;
+    }
+    
+    #liComentarios {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-around;
+        align-items: flex-start;
+        column-gap: 2%;
+        margin-left: 7%;
+    
+    }
+    
+    #textArea
+    {
+        width: 65%;
+        font-size: 50%;
+    }
+    
+    #liTerminos{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content:space-around;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    #inputCheck
+    {
+        height: 95%;
+    }
+    
+    #liForm{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+    
+    .botonForm{
+        border:2px solid #DACDBC;
+        color: #352a20;
+        width: 35%;
+        font-size: 40%;
+    }
+    
+    select{
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        font-size: 40%;
+    }
+
+    #botonHache{
+        font-size: 10px;
+    }
+
+    .bodyMayor{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 1900px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }   
+
+    .desProd    
+        {font-size: 10px;}
+}
+
+@media only screen and (min-width: 768px)
+{
+    body{
+    background-image: url("../Imagenes/fondoIndex.jpg");
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    .tituloMain{
+        font-size: 14px;
+    }
+
+    .parrafoCopyright {
+        font-size: 11px;
+    }
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    .botonesMenu{
+        font-size: 11px;
+    }
+
+    #parrafoSobreNos{
+        font-size:12.7px;
+        line-height: 150%;
+    }
+
+    #tituloFilosofiaHache{
+    
+        font-size: 15px;
+        }
+
+    .parrafoCaracteristicas{
+            color:#5C4E41;
+            font-weight: bolder;
+            font-size: 12px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+            font-family: 'Lato', sans-serif;
+        
+        }
+        
+    .animate__animated.animate__fadeIn
+        {
+                --animate-duration: 4s;
+         }
+        
+    .animate__animated.animate__slideInLeft
+        {
+                --animate-duration: 2s;
+        }
+        
+    .animate__animated.animate__slideInRight
+        {
+                --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInUp
+        {
+                --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInDown
+        {
+                --animate-duration: 2s;
+        }
+
+    .parrafoFormulario{
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 50%;
+            margin-bottom: 10px;
+        }
+    
+    .labelForm
+        {
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 8.5px;
+       }
+
+    #liNombre{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 5%;
+        margin-left: 2%;
+    }
+    
+    #liTelef{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 6.5%;
+        margin-left: 2%;
+    }
+    
+    #liEmail{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 7.9%;
+        margin-left: 2%;
+    }
+    
+    .inputEfecto{
+        width: 50%;
+    }
+
+   
+
+    #liPublicidad {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-around;
+        margin-left: 4.2%;
+    }
+    
+    #liComentarios {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-around;
+        align-items: flex-start;
+        column-gap: 2%;
+        margin-left: 7%;
+    
+    }
+    
+    #textArea
+    {
+        width: 65%;
+        font-size: 75%;
+    }
+    
+    #liTerminos{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content:space-around;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    #inputCheck
+    {
+        height: 95%;
+    }
+    
+    #liForm{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+    
+    .botonForm{
+        border:2px solid #DACDBC;
+        color: #352a20;
+        width: 35%;
+        font-size: 55%;
+    }
+    
+    select{
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        font-size: 60%;
+    }
+
+    #botonHache{
+        font-size: 13px;
+    }
+
+    .bodyMayor{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 2100px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+    
+    .desProd    
+        {font-size: 11px;}
+}
+
+
+
+@media only screen and (min-width: 992px)
+{
+    body{
+    background-image: url("../Imagenes/fondoIndex.jpg");
+    height: 950px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    .tituloMain{
+        font-size: 19px;
+    }
+
+    .parrafoCopyright {
+        font-size: 14px;
+    }
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    .botonesMenu{
+        font-size: 14px;
+    }
+
+    #parrafoSobreNos{
+        font-size:16.3px;
+        line-height: 150%;
+    }
+
+    #tituloFilosofiaHache{
+    
+        font-size: 17px;
+        }
+
+        .parrafoCaracteristicas{
+            color:#5C4E41;
+            font-weight: bolder;
+            font-size: 15px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 40px;
+            font-family: 'Lato', sans-serif;
+        
+            }
+        
+    .animate__animated.animate__fadeIn
+        {
+                --animate-duration: 4s;
+        }
+        
+    .animate__animated.animate__slideInLeft
+        {
+                --animate-duration: 2s;
+        }
+        
+    .animate__animated.animate__slideInRight
+        {
+                --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInUp
+        {
+                --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInDown
+        {
+                --animate-duration: 2s;
+        }
+
+    .parrafoFormulario{
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+    
+    .labelForm
+        {
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 11px;
+       }
+
+    #liNombre{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 5%;
+        margin-left: 2%;
+    }
+    
+    #liTelef{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 6.5%;
+        margin-left: 2%;
+    }
+    
+    #liEmail{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 7.9%;
+        margin-left: 2%;
+    }
+    
+    .inputEfecto{
+        width: 50%;
+    }
+
+   
+
+    #liPublicidad {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-around;
+        margin-left: 4.2%;
+    }
+    
+    #liComentarios {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-around;
+        align-items: flex-start;
+        column-gap: 2%;
+        margin-left: 7%;
+    
+    }
+    
+    #textArea
+    {
+        width: 65%;
+        font-size: 80%;
+    }
+    
+    #liTerminos{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content:space-around;
+        align-items: flex-start;
+        margin-left: 5%;
+    }
+
+    #inputCheck
+    {
+        height: 85%;
+    }
+    
+    #liForm{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+    
+    .botonForm{
+        border:2px solid #DACDBC;
+        color: #352a20;
+        width: 35%;
+        font-size: 70%;
+    }
+    
+    select{
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        font-size: 70%;
+    }
+
+    #botonHache{
+        font-size: 15px;
+    }
+
+
+    .bodyMayor{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 2300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+    
+    .desProd    
+        {
+            font-size: 12px;}
+}
+
+
+@media only screen and (min-width: 1080px)
+{
+    body{
+    background-image: url("../Imagenes/fondoIndex.jpg");
+    height: 1100px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    
+
+    .tituloMain{
+        font-size: 25px;
+    }
+
+    .parrafoCopyright {
+        font-size: 15px;
+    }
+
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    .botonesMenu{
+        font-size: 14px;
+    }
+
+    #parrafoSobreNos{
+        font-size:20.5px;
+        line-height: 150%;
+        }
+
+    #tituloFilosofiaHache{
+    
+    font-size: 20px;
+    }
+
+    .parrafoCaracteristicas{
+    color:#5C4E41;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    font-family: 'Lato', sans-serif;
+
+    }
+
+    .animate__animated.animate__fadeIn
+    {
+        --animate-duration: 4s;
+    }
+
+    .animate__animated.animate__slideInLeft
+    {
+        --animate-duration: 2s;
+    }
+
+    .animate__animated.animate__slideInRight
+    {
+        --animate-duration: 2s;
+    }
+
+    .animate__animated.animate__slideInUp
+        {
+                --animate-duration: 2s;
+        }
+
+    .animate__animated.animate__slideInDown
+        {
+                --animate-duration: 2s;
+        }
+
+    .parrafoFormulario{
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+    .labelForm
+        {
+            color: #352a20;
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+       }
+    
+    #liNombre{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 5%;
+        margin-left: 2%;
+    }
+    
+    #liTelef{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 6.5%;
+        margin-left: 2%;
+    }
+    
+    #liEmail{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        column-gap: 7.9%;
+        margin-left: 2%;
+    }
+    
+    .inputEfecto{
+     font-size: 12px;
+    }
+
+
+    #liPublicidad {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-around;
+        margin-left: 4.2%;
+    }
+    
+    #liComentarios {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-around;
+        align-items: flex-start;
+        column-gap: 2%;
+        margin-left: 8%;
+    
+    }
+    
+    #textArea
+    {
+        width: 65%;
+        font-size: 95%;
+    }
+    
+    #liTerminos{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        justify-content:space-around;
+        align-items: flex-start;
+        margin-left: 6%;
+    }
+
+    #inputCheck
+    {
+        width: 10%;
+        height: 100%;
+    }
+    
+    #liForm{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+    
+    .botonForm{
+        border:2px solid #DACDBC;
+        color: #352a20;
+        width: 35%;
+        font-size: 90%;
+    }
+    
+    select{
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        font-size: 80%;
+    }
+
+    #botonHache{
+        font-size: 18px;
+    }
+
+    .bodyMayor{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 2500px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
+
+    .desProd
+    {font-size: 15px;}
+
+
+
+}
