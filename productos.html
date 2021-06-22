@@ -4,42 +4,47 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <title>Hache - Productos</title>
         <link rel="stylesheet" href="./CSS/estilo.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </head>
-    <body class= "bodyMayor">
-        <div id="gridProductos"> 
+    <body>
+        <div id="gridSobreNos"> 
             <header>  
-                <div class= "divLogo">  
-                 <a href="index.html"> <img src="Logo/logo.jpeg"></a>
-                </div>
-                <div class= "divNav">
-                    <nav>   
-                        <ul>
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="index.html">Inicio</a>  
-                            </li>
+                 <div class= "divNav">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                            <div class= "divUno">
+                            <a class="navbar-brand" href="index.html"> <img class= "img-fluid imgLogo" src="Logo/logo.jpeg"></a>
+                            </div>
 
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="sobrenosotros.html">¿Quiénes somos?</a> 
-                            </li>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="productos.html">Productos</a>   
-                            </li>
-
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="galeria.html">Galería</a>   
-                            </li>
-                    
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="contacto.html">Contacto</a>    
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                            <div class="collapse navbar-collapse divDos" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulUno">
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="sobrenosotros.html">Sobre Nosotros</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="galeria.html">Galería</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                          </div>
+                        </div>
+                      </nav>
             </header>
             <main id= "mainProductos">
                 <section id= "sectionProdTitu">
@@ -49,24 +54,24 @@
                 </section>
 
                 <section id="sectionProductos">
-                     <div id="divImgUno"><img src="Imagenes/img1.jpg" alt=""></div>
-                     <div id="divImgDos"><img src="Imagenes/img2.jpg" alt=""></div>
-                     <div id="divImgTres"><img src="Imagenes/img3.jpg" alt=""></div>
-                     <div id="divProdUno"><p class="desProd">Candle Ginebra</p><p class="desProd">$500</p></div>
-                     <div id="divProdDos"><p class="desProd">Candle Napoles</p><p class="desProd">$500</p></div>
-                     <div id="divProdTres"><p class="desProd">Candle Ginebra</p><p class="desProd">$500</p></div>
-                     <div id="divImgCuatro"> <img src="Imagenes/img4.jpg" alt=""></div>
-                     <div id="divImgCinco"> <img src="Imagenes/img5.jpg" alt=""></div>
-                     <div id="divImgSeis"> <img src="Imagenes/img6.jpg" alt=""></div>
-                     <div id="divProdCuatro"><p class="desProd">Home Spray</p><p class="desProd">$450</p></div>
-                     <div id="divProdCinco"><p class="desProd">Aromatic Diffuser</p><p class="desProd">$450</p></div>
-                     <div id="divProdSeis"><p class="desProd">Splash</p><p class="desProd">$300</p></div>
-                     <div id="divImgSiete"> <img src="Imagenes/img7.jpg" alt=""></div>
-                     <div id="divImgOcho"> <img src="Imagenes/img8.jpg" alt=""></div>
-                     <div id="divImgNueve"> <img src="Imagenes/img9.jpg" alt=""></div>
-                     <div id="divProdSiete"><p class="desProd">Frasco Det. Roma</p><p class="desProd">$300</p></div>
-                     <div id="divProdOcho"><p class="desProd">Growler Milán</p><p class="desProd">$550</div>
-                     <div id="divProdNueve"><p class="desProd">Florero Niza</p><p class="desProd">$600</div>
+                     <div class="rounded" id="divImgUno"><img src="Imagenes/img1.jpg" alt=""></div>
+                     <div class="rounded" id="divImgDos"><img src="Imagenes/img2.jpg" alt=""></div>
+                     <div class="rounded" id="divImgTres"><img src="Imagenes/img3.jpg" alt=""></div>
+                     <div class="rounded" id="divProdUno"><p class="desProd">Candle Ginebra</p><p class="desProd">$500</p></div>
+                     <div class="rounded" id="divProdDos"><p class="desProd">Candle Napoles</p><p class="desProd">$500</p></div>
+                     <div class="rounded" id="divProdTres"><p class="desProd">Candle Ginebra</p><p class="desProd">$500</p></div>
+                     <div class="rounded" id="divImgCuatro"> <img src="Imagenes/img4.jpg" alt=""></div>
+                     <div class="rounded" id="divImgCinco"> <img src="Imagenes/img5.jpg" alt=""></div>
+                     <div class="rounded" id="divImgSeis"> <img src="Imagenes/img6.jpg" alt=""></div>
+                     <div class="rounded" id="divProdCuatro"><p class="desProd">Home Spray</p><p class="desProd">$450</p></div>
+                     <div class="rounded" id="divProdCinco"><p class="desProd">Aromatic Diffuser</p><p class="desProd">$450</p></div>
+                     <div class="rounded" id="divProdSeis"><p class="desProd">Splash</p><p class="desProd">$300</p></div>
+                     <div class="rounded" id="divImgSiete"> <img src="Imagenes/img7.jpg" alt=""></div>
+                     <div class="rounded" id="divImgOcho"> <img src="Imagenes/img8.jpg" alt=""></div>
+                     <div class="rounded" id="divImgNueve"> <img src="Imagenes/img9.jpg" alt=""></div>
+                     <div class="rounded" id="divProdSiete"><p class="desProd">Frasco Det. Roma</p><p class="desProd">$300</p></div>
+                     <div class="rounded" id="divProdOcho"><p class="desProd">Growler Milán</p><p class="desProd">$550</div>
+                     <div class="rounded" id="divProdNueve"><p class="desProd">Florero Niza</p><p class="desProd">$600</div>
                 </section>
             </main>
             <footer>
@@ -87,5 +92,6 @@
             </div>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
 </html> 

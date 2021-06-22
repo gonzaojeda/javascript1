@@ -4,74 +4,43 @@
     padding: 0;}
 
 
-
-
-
 /* /////// PROPIEDADES EN COMÚN /////// */   
 
-header {
-    width: 99.8%;
+ header {
+    width: 100%;
     background-color:#DACDBC;
-    border: 1px solid #5C4E41;
-    display:flex;
-    flex-direction: row;
     position: sticky;
+    z-index: 10;
     top: 0px;
     grid-area: header;
 }
 
-.divLogo {
-    width: 7%;
-    height: 70%;
+.divNav{
+    width: 100%;
+    background-color:#DACDBC;
     border: 1px solid #5C4E41;
-    margin-right: 5%;
-    align-self: center;
-    margin-left: 5%;
 }
 
-.divLogo:hover{
-    border: 1px solid black;
+.divUno
+        {
+              width: 10%;  
+            }
+            
+.imgLogo {
+    border: 1px solid #5C4E41;
 }
 
-.divNav{width: 80%;
-     background-color:#DACDBC;
-}
-
-img {
+img{
     width: 100%;
     height: 100%;
 }
-
-nav {
-     height: 100%;
-     width: 100%;}
-
-ul{ background-color:#DACDBC;
-    list-style-type: none;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
-.liNav{ 
-    font-family: 'Lato', sans-serif;
-}
-
-.liMenu:hover
-    {   transform: scale(1.2,1.2);
-        transition: 1s;
-        }
-
-.botonesMenu{  
-    color:#5C4E41;
-    border: 1px solid #5C4E41;
-    padding: 4px 2px 4px 2px;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight:normal;
-}
+.ulUno
+            {
+             width: 100%;
+             justify-content: space-evenly;
+             align-items: center;
+             
+            }
 
 footer {
     background-color: #DACDBC;
@@ -119,27 +88,16 @@ footer {
 .spanCopyright
 { display: flex;
   flex-direction: row;
-  justify-content: flex-end;} 
+  justify-content: flex-end;}
+   
 
 .parrafoCopyright {
     color:#5C4E41;
     font-family: 'Lato', sans-serif;
-    font-size: 12px;
+    margin-bottom: 0;
 }
 
 /* /////// PAGINA INICIO /////// */
-
-.gridIndex{ 
-    display: grid;
-    height: 100%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 85% 5%;
-    grid-template-areas: "header header"
-                         "main main"
-                         "footer footer";
-}
-
-
 
 .mainIndex{
     display:flex;
@@ -163,19 +121,18 @@ footer {
 
 .divTitulo {
     width: 100%;
-    height: 100%;
 
 }
 
 .tituloMain{
     color:#5C4E41;
-    font-size: 25px;
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
     font-family: 'Lato', sans-serif;
     background-color: #DACDBC;
     border: 4px groove #5C4E41;
+    padding: 5% 5% 5% 5%;
 }
 
 .divImagenIndex {
@@ -196,17 +153,6 @@ footer {
     background-image: url("../Imagenes/contacto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-
-#gridSobreNos {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 10% 85% 5%;
-    grid-template-areas: "header header header"
-                         "main main main"
-                         "footer footer footer";
 }
 
 
@@ -243,60 +189,7 @@ footer {
    
 }
 
-
-#divSobreNos {
-    width: 100%;
-    height: 70%;
-    border: 2px solid #5C4E41;
-    background-color: #DACDBC;
-
-}
-
-#parrafoSobreNos {
-    color:#5C4E41;
-    font-size: 20px;
-    text-align: justify;
-    font-family: 'Lato', sans-serif;
-    margin: 1% 2% 2% 2%;   
-    
-}
-
-#divFilosofiaHache
-{ width: 50%;
-    height: 25%;
-    background-color: #DACDBC;
-    border: 1px dashed #5C4E41;
-}
-
-#tituloFilosofiaHache{
-    color:#5C4E41;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Lato', sans-serif;
-   }
-
-.divCaracteristicas
-{
-    width: 25%;
-    height: 60%;
-    background-color: #DACDBC;
-    border: 1px dotted #5C4E41;
-}
-
 /* /////// PAGINA PRODUCTOS /////// */
-
-
-#gridProductos{ 
-    display: grid;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 92% 3%;
-    grid-template-areas: "header"
-                         "main"
-                        "footer";
-                }
 
 #mainProductos{
     display:flex;
@@ -558,27 +451,18 @@ footer {
 }
 /* /////// PAGINA GALERIA /////// */
 
-    
-#gridGaleria{ 
-    display: grid;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 92% 3%;
-    grid-template-areas: "header"
-                         "main"
-                         "footer";
-    }
-    
 
 #mainGaleria{
     grid-area: main;
-    width: 90%;
-    align-self: center;
-    justify-self: center;
-    border:  5px solid #352a20 ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     }
 
 #sectionGaleria{
+    width: 70%;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 3fr 3fr 3fr;
@@ -586,6 +470,11 @@ footer {
                              "foto4 foto5 foto6"
                              "foto7 foto8 foto9";
     }
+
+.sectionCarousel{
+        width: 50%;
+        border: 5px solid #352a20;
+        }
 
 #divGaleriaUno{
     grid-area: foto1;
@@ -658,6 +547,7 @@ footer {
 
 #sectionContacto{
     width: 100%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -668,11 +558,6 @@ footer {
     height: 100%;
     border: 2px solid #5C4E41;
     background-image: linear-gradient(to bottom,#DACDBC,#a79585);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-top: -7%;
-    margin-bottom: 3%;
-
 }
 
 #divMainRedes{
@@ -684,10 +569,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-top: -7%;
-    margin-bottom: 3%;
+
 
 }
 
@@ -707,9 +589,9 @@ ol{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    height: 100%;
+    height: 90%;
     width: 90%;
-    margin-left: 2%;
+    margin-left: 0%;
 }
 
 
@@ -821,6 +703,7 @@ legend{
     margin-left: 5%;
 }
 
+
 #liForm{
     display: flex;
     flex-direction: row;
@@ -851,6 +734,7 @@ select{
     width: 45%;
     border: 2px solid #5C4E41;
     margin-bottom: 5%;
+    margin-top: 2%;
 
 }
 
@@ -876,24 +760,81 @@ select{
     transition: 0.5s;
     font-weight: bold;
     }
+
+
 @media only screen and (max-width: 600px)
 {
     body{
     background-image: url("../Imagenes/fondoIndex.jpg");
-    height: 600px;
+    height: 1500px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     }
 
-    .tituloMain{
-        font-size: 10px;
+    .gridIndex{ 
+        display: grid;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 3% 94% 3%;
+        grid-template-areas: "header header"
+                             "main main"
+                             "footer footer";
     }
 
-    .parrafoCopyright {
-        font-size: 8px;
+    .divUno
+        {
+              width: 15%;  
+            }
+    .tituloMain{
+        font-size: 70%;
     }
+
+    #divFooterUno{
+        width: 50%;
+    }
+    
+    #divFooterDos{
+        width: 50%;
+    }
+    
+    .spanFooter { 
+     width: 95%;
+     margin-left: 5px;
+    }
+    
+    #logoIg {
+        width: 7%;
+        
+    }
+    
+    #logoIg:hover{
+        transform: scale(1.2,1.2);
+        transition: 0.5s;
+    }
+    
+    #logoWp {
+        width: 7%;
+          
+    }
+    
+    #logoWp:hover{
+        transform: scale(1.2,1.2);
+        transition: 0.5s;
+    }
+    
+    .spanCopyright
+    { display: flex;
+      flex-direction: row;
+      justify-content: flex-end;} 
+    
+    .parrafoCopyright {
+        color:#5C4E41;
+        font-family: 'Lato', sans-serif;
+        font-size: 50%;
+    }
+
 
     ul{
     display: flex;
@@ -902,23 +843,99 @@ select{
 
     }
     .botonesMenu{
-        font-size: 8px;
+        font-size: 80%;
     }
 
-    #parrafoSobreNos{
-        font-size:8.5px;
-        line-height: 150%;
-    }
-
-    #tituloFilosofiaHache{
-    
-        font-size: 10px;
+    .botonesMenu:hover
+        {
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+            color:#5C4E41 ;
         }
+
+    #gridSobreNos {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 3% 94% 3%;
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+    }
+    
+    #sectionSobreNos{
+        width: 70%;
+        height: 20%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #sectionFilosofiaHache{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .sectionCaracteristicas{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+    }
+    
+    
+    #divSobreNos {
+        width: 100%;
+        height: 55%;
+        border: 2px solid #5C4E41;
+        background-color: #DACDBC;
+    
+    }
+    
+    .parrafoSobreNos {
+        color:#5C4E41;
+        font-size: 60%;
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+        margin: 1% 2% 2% 2%;   
+        
+    }
+    
+    #divFilosofiaHache
+    { width: 50%;
+        height: 25%;
+        background-color: #DACDBC;
+        border: 1px dashed #5C4E41;
+    }
+    
+    #tituloFilosofiaHache{
+        color:#5C4E41;
+        font-size: 55%;
+        height: 100%;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5%;
+        font-family: 'Lato', sans-serif;
+       }
+    
+    .divCaracteristicas
+    {
+        width: 25%;
+        height: 60%;
+        background-color: #DACDBC;
+        border: 1px dotted #5C4E41;
+    }
 
     .parrafoCaracteristicas{
             color:#5C4E41;
             font-weight: bolder;
-            font-size: 7px;
+            font-size: 15%;
             text-align: center;
             margin-left: 10px;
             margin-right: 10px;
@@ -1014,21 +1031,25 @@ select{
         margin-left: 4.2%;
     }
     
-    #liComentarios {
+    .liComentarios {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 80%;
+        height: 40%;
         justify-content:space-around;
         align-items: flex-start;
         column-gap: 2%;
-        margin-left: 6%;
+        margin-left: 8%;
     
     }
     
-    #textArea
+    #floatingTextarea
     {
-        width: 65%;
-        font-size: 5px;
+        width: 100%;
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        height: 100%;
+        font-size: 80%;
     }
     
     #liTerminos{
@@ -1061,6 +1082,10 @@ select{
         font-size: 3px;
     }
     
+    #flexRadioDefault1{
+        width: 7%;
+        height: 70%;
+    }
     select{
         color: #352a20;
         font-family: 'Lato', sans-serif;
@@ -1080,32 +1105,81 @@ select{
         }
 
     .desProd    
-    {font-size: 8px;}
+    {font-size: 30%;
+        margin: 0;}
 
 }
 
 @media only screen and (max-width: 400px)
 {
     body{
-    height:400px;
+    height:1000px;
     background-image: url("../Imagenes/fondoIndex.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     }
-
-    .divLogo{
-    width: 10%;
-    }
     
+    .gridIndex{ 
+        display: grid;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 3% 94% 3%;
+        grid-template-areas: "header header"
+                             "main main"
+                             "footer footer";
+    }
+    .divUno{
+        width: 20%;  
+      }
 
     .tituloMain{
-        font-size: 6px;
+        font-size: 50%;
     }
 
+    #divFooterUno{
+        width: 50%;
+    }
+    
+    #divFooterDos{
+        width: 50%;
+    }
+    
+    .spanFooter { 
+     width: 95%;
+     margin-left: 5px;
+    }
+    
+    #logoIg {
+        width: 7%;
+        
+    }
+    
+    #logoIg:hover{
+        transform: scale(1.2,1.2);
+        transition: 0.5s;
+    }
+    
+    #logoWp {
+        width: 7%;
+          
+    }
+    
+    #logoWp:hover{
+        transform: scale(1.2,1.2);
+        transition: 0.5s;
+    }
+    
+    .spanCopyright
+    { display: flex;
+      flex-direction: row;
+      justify-content: flex-end;} 
+    
     .parrafoCopyright {
-        font-size: 2px;
+        color:#5C4E41;
+        font-family: 'Lato', sans-serif;
+        font-size: 40%;
     }
 
     ul{
@@ -1115,27 +1189,103 @@ select{
 
     }
     .botonesMenu{
-        font-size: 2px;
-    }
-    
-    #parrafoSobreNos{
-        font-size:4.5px;
-
+        font-size: 70%;
     }
 
-    #tituloFilosofiaHache{
+    .botonesMenu:hover
+        {
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+            color:#5C4E41 ;
+        }
+
+    #gridSobreNos {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 3% 94% 3%;
+        grid-template-areas: "header header header"
+                             "main main main"
+                             "footer footer footer";
+    }
     
-        font-size: 5px;
-    }    
+    #sectionSobreNos{
+        width: 70%;
+        height: 20%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+    }
     
-    .parrafoCaracteristicas{
+    #sectionFilosofiaHache{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .sectionCaracteristicas{
+        width: 80%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+    }
+    
+    
+    #divSobreNos {
+        width: 100%;
+        height: 70%;
+        border: 2px solid #5C4E41;
+        background-color: #DACDBC;
+    
+    }
+    
+    .parrafoSobreNos {
         color:#5C4E41;
-        font-weight: bolder;
-        font-size: 4px;
+        font-size: 40%;
+        text-align: justify;
+        font-family: 'Lato', sans-serif;
+        margin: 1% 2% 2% 2%;   
+        
+    }
+    
+    #divFilosofiaHache
+    { width: 50%;
+        height: 25%;
+        background-color: #DACDBC;
+        border: 1px dashed #5C4E41;
+    }
+    
+    #tituloFilosofiaHache{
+        color:#5C4E41;
+        font-size: 40%;
+        height: 100%;
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 15px;
+        margin-top: 5%;
+        font-family: 'Lato', sans-serif;
+       }
+    
+    .divCaracteristicas
+    {
+        width: 25%;
+        height: 60%;
+        background-color: #DACDBC;
+        border: 1px dotted #5C4E41;
+    }
+
+    .parrafoCaracteristicas{
+        color:#5C4E41;
+        font-weight: bolder;
+        font-size: 10%;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 25px;
         font-family: 'Lato', sans-serif;
     
     }
@@ -1224,21 +1374,25 @@ select{
         margin-left: 6.5%;
     }
     
-    #liComentarios {
+    .liComentarios {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 80%;
+        height: 40%;
         justify-content:space-around;
         align-items: flex-start;
         column-gap: 2%;
-        margin-left: 6%;
+        margin-left: 8%;
     
     }
     
-    #textArea
+    #floatingTextarea
     {
-        width: 65%;
-        font-size: 5px;
+        width: 100%;
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        height: 100%;
+        font-size: 80%;
     }
     
     #liTerminos{
@@ -1271,6 +1425,10 @@ select{
         font-size: 3px;
     }
     
+    #flexRadioDefault1{
+        width: 14%;
+        height: 70%;
+    }
     select{
         color: #352a20;
         font-family: 'Lato', sans-serif;
@@ -1290,8 +1448,9 @@ select{
         background-attachment: fixed;
         }
 
-    .desProd    
-    {font-size: 6px;}
+    .desProd
+        {font-size: 25%;
+         margin: 0;}
   
 }
 
@@ -1299,53 +1458,178 @@ select{
 @media only screen and (min-width: 600px)
 {
     body{
-    background-image: url("../Imagenes/fondoIndex.jpg");
-    height: 700px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
-
-    .tituloMain{
-        font-size: 12px;
-    }
-
-    .parrafoCopyright {
-        font-size: 10px;
-    }
-
-    ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    }
-    .botonesMenu{
-        font-size: 10px;
-    }
-
-    #parrafoSobreNos{
-        font-size:10px;
-        line-height: 150%;
-    }
-
-    #tituloFilosofiaHache{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 1900px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
     
-        font-size: 12px;
+        .gridIndex{ 
+            display: grid;
+            height: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 3% 94% 3%;
+            grid-template-areas: "header header"
+                                 "main main"
+                                 "footer footer";
+        }
+    
+        .divUno{
+            width: 12%;  
+          }
+
+        .tituloMain{
+            font-size: 85%;
+        }
+    
+        #divFooterUno{
+            width: 50%;
+        }
+        
+        #divFooterDos{
+            width: 50%;
+        }
+        
+        .spanFooter { 
+         width: 95%;
+         margin-left: 5px;
+        }
+        
+        #logoIg {
+            width: 7%;
+            
+        }
+        
+        #logoIg:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        #logoWp {
+            width: 7%;
+              
+        }
+        
+        #logoWp:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        .spanCopyright
+        { display: flex;
+          flex-direction: row;
+          justify-content: flex-end;} 
+        
+        .parrafoCopyright {
+            color:#5C4E41;
+            font-family: 'Lato', sans-serif;
+            font-size: 60%;
+        }
+    
+    
+       .botonesMenu{
+            font-size: 90%;
         }
 
-     .parrafoCaracteristicas{
+        .botonesMenu:hover
+        {
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+            color:#5C4E41 ;
+        }
+        
+        #gridSobreNos {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 3% 94% 3%;
+            grid-template-areas: "header header header"
+                                 "main main main"
+                                 "footer footer footer";
+        }
+        
+        #sectionSobreNos{
+            width: 70%;
+            height: 20%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #sectionFilosofiaHache{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .sectionCaracteristicas{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+        
+        
+        #divSobreNos {
+            width: 100%;
+            height: 55%;
+            border: 2px solid #5C4E41;
+            background-color: #DACDBC;
+        
+        }
+        
+        .parrafoSobreNos {
             color:#5C4E41;
-            font-weight: bolder;
-            font-size: 9px;
+            font-size: 70%;
+            text-align: justify;
+            font-family: 'Lato', sans-serif;
+            margin: 1% 2% 2% 2%;   
+            
+        }
+        
+        #divFilosofiaHache
+        { width: 50%;
+            height: 25%;
+            background-color: #DACDBC;
+            border: 1px dashed #5C4E41;
+        }
+        
+        #tituloFilosofiaHache{
+            color:#5C4E41;
+            font-size: 65%;
+            height: 100%;
             text-align: center;
             margin-left: 10px;
             margin-right: 10px;
-            margin-top: 30px;
+            margin-top: 5%;
             font-family: 'Lato', sans-serif;
+           }
         
+        .divCaracteristicas
+        {
+            width: 25%;
+            height: 50%;
+            background-color: #DACDBC;
+            border: 1px dotted #5C4E41;
         }
+    
+        .parrafoCaracteristicas{
+                color:#5C4E41;
+                font-weight: bolder;
+                font-size: 60%;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 25px;
+                font-family: 'Lato', sans-serif;
+            
+            }
         
     .animate__animated.animate__fadeIn
         {
@@ -1431,21 +1715,26 @@ select{
         margin-left: 4.2%;
     }
     
-    #liComentarios {
+   
+    .liComentarios {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 80%;
+        height: 40%;
         justify-content:space-around;
         align-items: flex-start;
         column-gap: 2%;
-        margin-left: 7%;
+        margin-left: 8%;
     
     }
     
-    #textArea
+    #floatingTextarea
     {
-        width: 65%;
-        font-size: 50%;
+        width: 100%;
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        height: 100%;
+        font-size: 80%;
     }
     
     #liTerminos{
@@ -1477,6 +1766,11 @@ select{
         width: 35%;
         font-size: 40%;
     }
+
+    #flexRadioDefault1{
+        width: 7%;
+        height: 70%;
+    }
     
     select{
         color: #352a20;
@@ -1497,60 +1791,193 @@ select{
         background-attachment: fixed;
         }   
 
-    .desProd    
-        {font-size: 10px;}
+    .desProd
+        {font-size: 60%;
+         margin: 0;}
 }
 
 @media only screen and (min-width: 768px)
 {
     body{
-    background-image: url("../Imagenes/fondoIndex.jpg");
-    height: 800px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
-
-    .tituloMain{
-        font-size: 14px;
-    }
-
-    .parrafoCopyright {
-        font-size: 11px;
-    }
-
-    ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    }
-    .botonesMenu{
-        font-size: 11px;
-    }
-
-    #parrafoSobreNos{
-        font-size:12.7px;
-        line-height: 150%;
-    }
-
-    #tituloFilosofiaHache{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 2100px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
     
-        font-size: 15px;
+        .gridIndex{ 
+            display: grid;
+            height: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 4% 93% 3%;
+            grid-template-areas: "header header"
+                                 "main main"
+                                 "footer footer";
+        }
+    
+        .divUno
+        {
+            width: 10%;
         }
 
-    .parrafoCaracteristicas{
+        .tituloMain{
+            font-size: 100%;
+        }
+    
+        #divFooterUno{
+            width: 50%;
+        }
+        
+        #divFooterDos{
+            width: 50%;
+        }
+        
+        .spanFooter { 
+         width: 95%;
+         margin-left: 5px;
+        }
+        
+        #logoIg {
+            width: 7%;
+            
+        }
+        
+        #logoIg:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        #logoWp {
+            width: 7%;
+              
+        }
+        
+        #logoWp:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        .spanCopyright
+        { display: flex;
+          flex-direction: row;
+          justify-content: flex-end;} 
+        
+        .parrafoCopyright {
             color:#5C4E41;
-            font-weight: bolder;
-            font-size: 12px;
+            font-family: 'Lato', sans-serif;
+            font-size: 70%;
+        }
+    
+    
+        ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        }
+        .botonesMenu{
+            font-size: 90%;
+        }
+
+        .botonesMenu:hover
+        {
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+            color:#5C4E41 ;
+        }
+
+        #gridSobreNos {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 4% 93% 3%;
+            grid-template-areas: "header header header"
+                                 "main main main"
+                                 "footer footer footer";
+        }
+        
+        #sectionSobreNos{
+            width: 70%;
+            height: 20%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #sectionFilosofiaHache{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .sectionCaracteristicas{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+        
+        
+        #divSobreNos {
+            width: 100%;
+            height: 55%;
+            border: 2px solid #5C4E41;
+            background-color: #DACDBC;
+        
+        }
+        
+        .parrafoSobreNos {
+            color:#5C4E41;
+            font-size: 80%;
+            text-align: justify;
+            font-family: 'Lato', sans-serif;
+            margin: 1% 2% 2% 2%;   
+            
+        }
+        
+        #divFilosofiaHache
+        { width: 50%;
+            height: 25%;
+            background-color: #DACDBC;
+            border: 1px dashed #5C4E41;
+        }
+        
+        #tituloFilosofiaHache{
+            color:#5C4E41;
+            font-size: 75%;
+            height: 100%;
             text-align: center;
             margin-left: 10px;
             margin-right: 10px;
-            margin-top: 30px;
+            margin-top: 5%;
             font-family: 'Lato', sans-serif;
+           }
         
+        .divCaracteristicas
+        {
+            width: 25%;
+            height: 45%;
+            background-color: #DACDBC;
+            border: 1px dotted #5C4E41;
         }
+    
+        .parrafoCaracteristicas{
+                color:#5C4E41;
+                font-weight: bolder;
+                font-size: 70%;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 25px;
+                font-family: 'Lato', sans-serif;
+            
+            }
         
     .animate__animated.animate__fadeIn
         {
@@ -1635,21 +2062,25 @@ select{
         margin-left: 4.2%;
     }
     
-    #liComentarios {
+    .liComentarios {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 80%;
+        height: 40%;
         justify-content:space-around;
         align-items: flex-start;
         column-gap: 2%;
-        margin-left: 7%;
+        margin-left: 8%;
     
     }
     
-    #textArea
+    #floatingTextarea
     {
-        width: 65%;
-        font-size: 75%;
+        width: 100%;
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        height: 100%;
+        font-size: 80%;
     }
     
     #liTerminos{
@@ -1682,6 +2113,10 @@ select{
         font-size: 55%;
     }
     
+    #flexRadioDefault1{
+        width: 7%;
+        height: 70%;
+    }
     select{
         color: #352a20;
         font-family: 'Lato', sans-serif;
@@ -1701,8 +2136,9 @@ select{
         background-attachment: fixed;
         }
     
-    .desProd    
-        {font-size: 11px;}
+    .desProd
+        {font-size: 70%;
+         margin: 0;}
 }
 
 
@@ -1710,52 +2146,189 @@ select{
 @media only screen and (min-width: 992px)
 {
     body{
-    background-image: url("../Imagenes/fondoIndex.jpg");
-    height: 950px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
-
-    .tituloMain{
-        font-size: 19px;
-    }
-
-    .parrafoCopyright {
-        font-size: 14px;
-    }
-
-    ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    }
-    .botonesMenu{
-        font-size: 14px;
-    }
-
-    #parrafoSobreNos{
-        font-size:16.3px;
-        line-height: 150%;
-    }
-
-    #tituloFilosofiaHache{
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 2300px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
     
-        font-size: 17px;
+        .gridIndex{ 
+            display: grid;
+            height: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 4% 93% 3%;
+            grid-template-areas: "header header"
+                                 "main main"
+                                 "footer footer";
+        }
+    
+
+        .divUno{
+        width: 10%;
         }
 
-        .parrafoCaracteristicas{
+        .tituloMain{
+            font-size: 120%;
+        }
+    
+        #divFooterUno{
+            width: 50%;
+        }
+        
+        #divFooterDos{
+            width: 50%;
+        }
+        
+        .spanFooter { 
+         width: 95%;
+         margin-left: 5px;
+        }
+        
+        #logoIg {
+            width: 7%;
+            
+        }
+        
+        #logoIg:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        #logoWp {
+            width: 7%;
+              
+        }
+        
+        #logoWp:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        .spanCopyright
+        {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-end;
+          
+          } 
+        
+        .parrafoCopyright {
             color:#5C4E41;
-            font-weight: bolder;
-            font-size: 15px;
+            font-family: 'Lato', sans-serif;
+            font-size: 85%;
+            
+        }
+    
+    
+        ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        }
+        .botonesMenu{
+            font-size: 90%;
+        }
+
+        .botonesMenu:hover
+        {
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+            color:#5C4E41 ;
+        }
+
+        #gridSobreNos {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 4% 93% 3%;
+            grid-template-areas: "header header header"
+                                 "main main main"
+                                 "footer footer footer";
+        }
+        
+        #sectionSobreNos{
+            width: 70%;
+            height: 20%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #sectionFilosofiaHache{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .sectionCaracteristicas{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+        
+        
+        #divSobreNos {
+            width: 100%;
+            height: 50%;
+            border: 2px solid #5C4E41;
+            background-color: #DACDBC;
+        
+        }
+        
+        .parrafoSobreNos {
+            color:#5C4E41;
+            font-size: 90%;
+            text-align: justify;
+            font-family: 'Lato', sans-serif;
+            margin: 1% 2% 2% 2%;   
+            
+        }
+        
+        #divFilosofiaHache
+        { width: 50%;
+            height: 25%;
+            background-color: #DACDBC;
+            border: 1px dashed #5C4E41;
+        }
+        
+        #tituloFilosofiaHache{
+            color:#5C4E41;
+            font-size: 85%;
+            height: 100%;
             text-align: center;
             margin-left: 10px;
             margin-right: 10px;
-            margin-top: 40px;
+            margin-top: 5%;
             font-family: 'Lato', sans-serif;
+           }
         
+        .divCaracteristicas
+        {
+            width: 25%;
+            height: 40%;
+            background-color: #DACDBC;
+            border: 1px dotted #5C4E41;
+        }
+    
+        .parrafoCaracteristicas{
+                color:#5C4E41;
+                font-weight: bolder;
+                font-size: 80%;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 25px;
+                font-family: 'Lato', sans-serif;
+            
             }
         
     .animate__animated.animate__fadeIn
@@ -1841,22 +2414,27 @@ select{
         margin-left: 4.2%;
     }
     
-    #liComentarios {
+    .liComentarios {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 80%;
+        height: 40%;
         justify-content:space-around;
         align-items: flex-start;
         column-gap: 2%;
-        margin-left: 7%;
+        margin-left: 8%;
     
     }
     
-    #textArea
+    #floatingTextarea
     {
-        width: 65%;
+        width: 100%;
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        height: 100%;
         font-size: 80%;
     }
+
     
     #liTerminos{
         display: flex;
@@ -1880,12 +2458,17 @@ select{
         align-items: flex-start;
         margin-left: 8%;
     }
-    
+
     .botonForm{
         border:2px solid #DACDBC;
         color: #352a20;
         width: 35%;
         font-size: 70%;
+    }
+
+    #flexRadioDefault1{
+        width: 7%;
+        height: 70%;
     }
     
     select{
@@ -1908,63 +2491,194 @@ select{
         background-attachment: fixed;
         }
     
-    .desProd    
-        {
-            font-size: 12px;}
+        .desProd
+        {font-size: 80%;
+         margin: 0;}
+    
 }
 
 
 @media only screen and (min-width: 1080px)
 {
     body{
-    background-image: url("../Imagenes/fondoIndex.jpg");
-    height: 1100px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    }
+        background-image: url("../Imagenes/fondoIndex.jpg");
+        height: 2500px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
     
-
-    .tituloMain{
-        font-size: 25px;
-    }
-
-    .parrafoCopyright {
-        font-size: 15px;
-    }
-
-    ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    }
-    .botonesMenu{
-        font-size: 14px;
-    }
-
-    #parrafoSobreNos{
-        font-size:20.5px;
-        line-height: 150%;
+        .gridIndex{ 
+            display: grid;
+            height: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 5% 92% 3%;
+            grid-template-areas: "header header"
+                                 "main main"
+                                 "footer footer";
+        }
+    
+        .divUno{
+            width: 10%;
+        }
+        .tituloMain{
+            font-size: 150%;
+        }
+    
+        #divFooterUno{
+            width: 50%;
+        }
+        
+        #divFooterDos{
+            width: 50%;
+        }
+        
+        .spanFooter { 
+         width: 95%;
+         margin-left: 5px;
+        }
+        
+        #logoIg {
+            width: 7%;
+            
+        }
+        
+        #logoIg:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        #logoWp {
+            width: 7%;
+              
+        }
+        
+        #logoWp:hover{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+        }
+        
+        .spanCopyright
+        { display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          } 
+        
+        .parrafoCopyright {
+            color:#5C4E41;
+            font-family: 'Lato', sans-serif;
+            font-size: 90%;
+        }
+    
+    
+        ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        }
+        .botonesMenu{
+            font-size: 90%;
         }
 
-    #tituloFilosofiaHache{
+        .botonesMenu:hover
+        {
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+            color:#5C4E41 ;
+        }
+
+        #gridSobreNos {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 5% 92% 3%;
+            grid-template-areas: "header header header"
+                                 "main main main"
+                                 "footer footer footer";
+        }
+        
+        #sectionSobreNos{
+            width: 70%;
+            height: 20%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #sectionFilosofiaHache{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .sectionCaracteristicas{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+        
+        
+        #divSobreNos {
+            width: 100%;
+            height: 50%;
+            border: 2px solid #5C4E41;
+            background-color: #DACDBC;
+        
+        }
+        
+        .parrafoSobreNos {
+            color:#5C4E41;
+            font-size: 120%;
+            text-align: justify;
+            font-family: 'Lato', sans-serif;
+            margin: 1% 2% 2% 2%;   
+            
+        }
+        
+        #divFilosofiaHache
+        { width: 50%;
+            height: 30%;
+            background-color: #DACDBC;
+            border: 1px dashed #5C4E41;
+        }
+        
+        #tituloFilosofiaHache{
+            color:#5C4E41;
+            font-size: 95%;
+            height: 100%;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 5%;
+            font-family: 'Lato', sans-serif;
+           }
+        
+        .divCaracteristicas
+        {
+            width: 25%;
+            height: 35%;
+            background-color: #DACDBC;
+            border: 1px dotted #5C4E41;
+        }
     
-    font-size: 20px;
-    }
-
-    .parrafoCaracteristicas{
-    color:#5C4E41;
-    font-weight: bolder;
-    font-size: 18px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 40px;
-    font-family: 'Lato', sans-serif;
-
-    }
+        .parrafoCaracteristicas{
+                color:#5C4E41;
+                font-weight: bolder;
+                font-size: 100%;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 25px;
+                font-family: 'Lato', sans-serif;
+            
+            }
 
     .animate__animated.animate__fadeIn
     {
@@ -2048,10 +2762,11 @@ select{
         margin-left: 4.2%;
     }
     
-    #liComentarios {
+    .liComentarios {
         display: flex;
         flex-direction: row;
-        width: 90%;
+        width: 80%;
+        height: 40%;
         justify-content:space-around;
         align-items: flex-start;
         column-gap: 2%;
@@ -2059,10 +2774,13 @@ select{
     
     }
     
-    #textArea
+    #floatingTextarea
     {
-        width: 65%;
-        font-size: 95%;
+        width: 100%;
+        color: #352a20;
+        font-family: 'Lato', sans-serif;
+        height: 100%;
+        font-size: 80%;
     }
     
     #liTerminos{
@@ -2116,7 +2834,8 @@ select{
         }
 
     .desProd
-    {font-size: 15px;}
+    {font-size: 80%;
+     margin: 0;}
 
 
 

@@ -4,44 +4,78 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <title>Hache - Galería</title>
         <link rel="stylesheet" href="./CSS/estilo.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </head>
-    <body class= "bodyMayor">
-        <div id="gridGaleria"> 
+    <body>
+        <div id="gridSobreNos"> 
             <header>  
-                <div class= "divLogo">  
-                 <a href="index.html"> <img src="Logo/logo.jpeg"></a>
-                </div>
                 <div class= "divNav">
-                    <nav>   
-                        <ul>
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="index.html">Inicio</a>  
-                            </li>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                            <div class= "divUno">
+                            <a class="navbar-brand" href="index.html"> <img class= "img-fluid imgLogo" src="Logo/logo.jpeg"></a>
+                            </div>
 
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="sobrenosotros.html">¿Quiénes somos?</a> 
-                            </li>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="productos.html">Productos</a>   
-                            </li>
-
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="galeria.html">Galería</a>   
-                            </li>
-                    
-                            <li class= "liMenu">
-                             <a class= "botonesMenu" href="contacto.html">Contacto</a>    
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                            <div class="collapse navbar-collapse divDos" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulUno">
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="sobrenosotros.html">Sobre Nosotros</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="galeria.html">Galería</a>
+                                    </li>
+                                    <li class="nav-item liNav">
+                                        <a class="nav-link botonesMenu" href="contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                          </div>
+                        </div>
+                      </nav>
             </header>
             <main id="mainGaleria">
+                <section class="sectionCarousel rounded">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Imagenes/carouselUno.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/carouselDos.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/carouselTres.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </section>
+
                 <section id= "sectionGaleria">
                     <div id= "divGaleriaUno"> <img class="imagenGaleria" src="./Imagenes/imagenUno.jpg" alt=""></div>
                     <div id= "divGaleriaDos"> <img class="imagenGaleria" src="./Imagenes/imagenDos.jpg" alt=""></div>
@@ -72,5 +106,7 @@
                 </div>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
     </body>
 </html> 
